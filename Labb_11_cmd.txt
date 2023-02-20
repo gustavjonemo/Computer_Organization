@@ -1,0 +1,5 @@
+avr-gcc -mmcu=atmega1284 -O0 -g C:\Users\gusta\OneDrive\Documents\C-files\Labb_11.c -o Labb_11_elf -lyoda
+
+avr-objcopy -j .text -j .data -O ihex Labb_11_elf Labb_11_hex
+
+to disassemble: avr-objdump -S Labb_11_elf
